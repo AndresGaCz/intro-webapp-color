@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Color Picker</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="redRange">Red</label>
+                <input type="range" class="form-control-range" id="redRange" min="0" max="255" value="0">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="greenRange">Green</label>
+                <input type="range" class="form-control-range" id="greenRange" min="0" max="255" value="0">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="blueRange">Blue</label>
+                <input type="range" class="form-control-range" id="blueRange" min="0" max="255" value="0">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="redInput">Red (Decimal)</label>
+                <input type="number" class="form-control" id="redInput" min="0" max="255" value="0">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="greenInput">Green (Decimal)</label>
+                <input type="number" class="form-control" id="greenInput" min="0" max="255" value="0">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="blueInput">Blue (Decimal)</label>
+                <input type="number" class="form-control" id="blueInput" min="0" max="255" value="0">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="colorPicker">Color Picker</label>
+                <input type="color" class="form-control" id="colorPicker">
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div id="colorDisplay" class="color-display rounded-circle"></div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <input type="text" class="form-control" id="hexCode" readonly>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
